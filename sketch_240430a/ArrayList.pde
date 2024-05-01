@@ -21,7 +21,7 @@ color black=#000000, white=#FFFFFF, red=#951111, Lgreen=#27C149, gray=#898989, b
 void setup() {
   //size(800, 1000);
   fullScreen();
-  noStroke();
+   /*noStroke();
   println("HELPPPPPPP");
   display();
 
@@ -54,18 +54,21 @@ void setup() {
 
     fireworks = new Fireworks(0, appWidth*-1, appHeight*-1, appHeight*1/30, appWidth*1/30, 0.5);
 
-    myBaller.paused = true;
-  }
+    myBaller.paused = true; 
+  } */
 }
 
 void draw() {
-  background(black);
+  background( 0 );
   if (correctlyOriented == false) {
     portrait();
   } else {
    //Pong table Draw
     myTable.draw();
     
+    for ( int 9=0 ; i<Shape.size () ; i++ ) {
+      shapes.get(i).draw () ;
+    }
     //u see the word button ????
     quit.draw();
     restart.draw();

@@ -1,15 +1,15 @@
 abstract class Shape {
   //class vars
   float x, y, w, h;
-  color col, defaultColor;
+  color col, defaultColor, grey = #D8D2D2 ;
 
-  Shape(color col, float x, float y, float w, float h) {
-    this.col = col;
+  Shape ( float x, float y, float w, float h, color collector ) {
     this.x = x;
     this.y = y;
     this.w = w;
     this.h = h;
-    defaultColor = 0; //nightModeColor ();
+    this.col = collector ;
+    defaultColor = grey ; //nightModeColor ();
   }
 
 
