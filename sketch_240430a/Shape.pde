@@ -1,7 +1,7 @@
 abstract class Shape {
   //class vars
-  float x, y, w, h;
-  color col, defaultColor, grey = #D8D2D2 ;
+  float x, y, w, h ;
+  color col, defaultColor, grey = #D8D2D2, blue = #22A7ED ;
 
   Shape ( float x, float y, float w, float h, color collector ) {
     this.x = x;
