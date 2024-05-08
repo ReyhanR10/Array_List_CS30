@@ -9,10 +9,10 @@ import ddf.minim.ugens.*;
 ArrayList <Shape> shapes = new ArrayList <Shape> () ;
 
 PongTable myTable;
-Button quit, restart, soloP, duosP, nullP;
-ScoreBoard lScore, rScore;
+//Button quit, restart, soloP, duosP, nullP;
+//ScoreBoard lScore, rScore;
 Paddle rPaddle, lPaddle;
-Fireworks fireworks;
+//Fireworks fireworks;
 
 Baller myBaller;
 
@@ -21,9 +21,11 @@ color black=#000000, white=#FFFFFF, red=#951111, Lgreen=#27C149, gray=#898989, b
 void setup() {
   //size(800, 1000);
   fullScreen();
+   display();
+   
   /*noStroke();
    println("HELPPPPPPP");
-   display();
+  
    
    if (correctlyOriented == true) {
    myTable = new PongTable(gray, appWidth*0, appHeight*1/10, appWidth, appHeight*8/10);
@@ -56,6 +58,10 @@ void setup() {
    
    myBaller.paused = true;
    } */
+  shapes.add(pongTable); //Element 0, pongTable
+  shapes.add(leftPaddle); //Element 1, Left Paddle
+  shapes.add(rightPaddle); //Element 2, Right Paddle
+  shapes.add(ball); //Element 3, Ball
 }
 
 void draw () {
